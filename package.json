@@ -27,7 +27,8 @@
       "scope": "source.bash",
       "file-types": [
         "sh",
-        "bash"
+        "bash",
+        "zsh"
       ]
     }
   ]
