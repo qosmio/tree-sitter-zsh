@@ -6,7 +6,7 @@
 //! ```
 //! let code = "";
 //! let mut parser = tree_sitter::Parser::new();
-//! parser.set_language(tree_sitter_bash::language()).expect("Error loading bash grammar");
+//! parser.set_language(tree_sitter_zsh::language()).expect("Error loading bash grammar");
 //! let tree = parser.parse(code, None).unwrap();
 //! ```
 //!
@@ -18,14 +18,14 @@
 use tree_sitter::Language;
 
 extern "C" {
-    fn tree_sitter_bash() -> Language;
+    fn tree_sitter_zsh() -> Language;
 }
 
 /// Get the tree-sitter [Language][] for this grammar.
 ///
 /// [Language]: https://docs.rs/tree-sitter/*/tree_sitter/struct.Language.html
 pub fn language() -> Language {
-    unsafe { tree_sitter_bash() }
+    unsafe { tree_sitter_zsh() }
 }
 
 /// The content of the [`node-types.json`][] file for this grammar.

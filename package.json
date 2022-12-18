@@ -1,7 +1,7 @@
 {
-  "name": "tree-sitter-bash",
-  "version": "0.19.0",
-  "description": "Bash grammar for tree-sitter",
+  "name": "tree-sitter-zsh",
+  "version": "0.20.0",
+  "description": "ZSH grammar for tree-sitter",
   "main": "bindings/node",
   "keywords": [
     "parser",
